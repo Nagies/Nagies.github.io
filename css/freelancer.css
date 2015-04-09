@@ -261,6 +261,24 @@ section.success a.active {
     }
 }
 
+/* Skills */
+#skills {
+    background-color: #4e4e4e;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+#skills h3 {
+    color: white;
+    text-align: center;
+}
+
+#skills p {
+    color: white;
+    font-weight: 400;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;

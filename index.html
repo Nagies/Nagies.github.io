@@ -22,6 +22,9 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <script src="js/chart.js"></script>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -116,6 +119,87 @@
             </div>
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <div id="skills">
+    <div class="container">
+      <div class="row centered">
+        <h3>Skills</h3>
+        <div class="col-lg-6 mt">
+          <canvas id="javascript" height="130" width="130"></canvas>
+          <p>JavaScript/jQuery</p>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 70,
+                  color:"#74cfae"
+                },
+                {
+                  value : 30,
+                  color : "#3c3c3c"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+          </script>
+        </div>
+        <div class="col-lg-6 mt">
+          <canvas id="html-css" height="130" width="130"></canvas>
+          <p>HTML/CSS</p>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 90,
+                  color:"#74cfae"
+                },
+                {
+                  value : 10,
+                  color : "#3c3c3c"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("html-css").getContext("2d")).Doughnut(doughnutData);
+          </script>
+        </div>
+        <div class="col-lg-6 mt">
+          <canvas id="ruby-rails" height="130" width="130"></canvas>
+          <p>Ruby on Rails</p>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 65,
+                  color:"#74cfae"
+                },
+                {
+                  value : 35,
+                  color : "#3c3c3c"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("ruby-rails").getContext("2d")).Doughnut(doughnutData);
+          </script>
+        </div>
+        <div class="col-lg-6 mt">
+          <canvas id="sql" height="130" width="130"></canvas>
+          <p>PostgreSQL</p>
+          <br>
+          <script>
+            var doughnutData = [
+                {
+                  value: 50,
+                  color:"#74cfae"
+                },
+                {
+                  value : 50,
+                  color : "#3c3c3c"
+                }
+              ];
+              var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
+          </script>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /skills -->
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -413,6 +497,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
