@@ -90,6 +90,26 @@ header .container {
     padding-bottom: 50px;
 }
 
+.splash-container {
+    position: relative;
+}
+
+#work-station { 
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+#text {
+    z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    left:150px;
+    top:350px;
+}
+
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -169,6 +189,16 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+#bs-example-navbar-collapse-1 {
+    position: relative;
+    bottom: 10px;
+}
+
+#house-button {
+    position: relative;
+    bottom: 17px;
 }
 
 section {
