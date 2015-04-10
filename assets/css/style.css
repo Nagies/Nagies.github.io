@@ -279,10 +279,14 @@ input {
 /* Skills */
 
 #s {
+
+min-height: 783px;
+
 }
 
 #skills {
   background-color: rgba(245, 245, 245, 1);
+  min-height: 783px;
 }
 
 #skills h3 {
@@ -304,6 +308,7 @@ input {
 
 /* GREY SECTION */
 #g {
+	min-height: 783px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: rgb(34, 167, 240);
@@ -360,11 +365,11 @@ input {
 
 /* CONTACT SEPARATOR */
 #sep {
+	min-height: 685px;
 	background-color: white;
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 470px;
 	width: 100%;
 	color: white;
 	
