@@ -31,45 +31,40 @@
   </head>
 
   <body>
-
     <div id="h">
-      <div class="logo">
-        <!-- <h2>BASIC</h2> -->
-      </div><!--/logo-->
-      <div class="container centered">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2" style="right: 510px">
+      <div class="logo"></div>
+        <div class="container centered">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2" style="right: 510px">
             <font size="5" class="hello">Hello, my name is <b>Jesse Nagelberg</b>.<br/>I'm a web developer.</font>
           </div>
-        </div><!--/row-->
-        
-        </div><!--/row-->
-      </div><!--/container-->
-    </div><!--H-->
+        </div>
+      </div>
+    </div>
 
     <div id="s">
       <div id="skills" data-spy="scroll" data-target="#skillz">
-          <div class="container">
-            <div class="row centered">
-              <h1>Skills</h1>
-              <div class="col-md-4 mt">
-                <canvas id="html" height="130" width="130"></canvas>
-                <p>HTML/CSS</p>
-                <br>
-                <script>
-                  var doughnutData = [
-                    {
-                      value: 88,
-                      color: "#008B8B"
+        <div class="container">
+          <div class="row centered">
+          <h1>Skills</h1>
+            <div class="col-md-4 mt">
+              <canvas id="html" height="130" width="130"></canvas>
+              <p>HTML/CSS</p>
+              <br>
+              <script>
+                var doughnutData = [
+                  {
+                    value: 88,
+                    color: "#008B8B"
 
-                    },
-                    {
-                      value : 12,
-                      color : "white"
-                    }
-                  ];
-                  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-                </script>
+                  },
+                  {
+                    value : 12,
+                    color : "white"
+                  }
+                ];
+                var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+              </script>
               </div>
               <div class="col-md-4 mt">
                 <canvas id="js" height="130" width="130"></canvas>
@@ -165,7 +160,7 @@
             </div><!-- /row -->
           </div><!-- /container -->
         </div><!-- /skills -->
-  </div>
+    </div>
 
     <div id="g">
       <div class="container">
@@ -203,6 +198,8 @@
           </div><!-- he wrap -->
         </div><!-- end col-12 -->
       </div>
+    </div>
+  </div>
 
     <div id="sep">
       <div class="container">
