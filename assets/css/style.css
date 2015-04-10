@@ -77,6 +77,11 @@ body {
 	color: #1abc9c;
 }
 
+#nav-links {
+	position:relative;
+	left:40px;
+}
+
 .alignleft { float: left; }
 .alignright { float: right; }
 .aligncenter {
