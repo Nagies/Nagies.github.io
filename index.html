@@ -38,8 +38,8 @@
       </div><!--/logo-->
       <div class="container centered">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1 class="hello">Hello, my name is <b>Jesse Nagelberg</b>.<br/>I create for the web.</h1>
+          <div class="col-md-8 col-md-offset-2" style="right: 510px">
+            <font size="5" class="hello">Hello, my name is <b>Jesse Nagelberg</b>.<br/>I'm a web developer.</font>
           </div>
         </div><!--/row-->
         
@@ -53,8 +53,8 @@
           <h2>Check out some of my latest works.</h2>
         </div><!--/row-->
       </div><!--/.container-->
-    <div class="portfolio-centered mt">
-      <div class="recentitems portfolio">
+      <div class="portfolio-centered mt">
+        <div class="recentitems portfolio" style="left: 440px">
 
         <div class="portfolio-item graphic-design">
           <div class="he-wrap tpl6">
@@ -81,42 +81,45 @@
             </div><!-- he view -->    
           </div><!-- he wrap -->
         </div><!-- end col-12 -->
+      </div>
+     </div>
 
     <div class="container mt">
       <div id="skills" data-spy="scroll" data-target="#skillz">
           <div class="container">
             <div class="row centered">
-              <h3>SKILLS</h3>
+              <h3>Skills</h3>
               <div class="col-md-4 mt">
-                <canvas id="ror" height="130" width="130"></canvas>
-                <p>Ruby on Rails</p>
+                <canvas id="html" height="130" width="130"></canvas>
+                <p>HTML/CSS</p>
                 <br>
                 <script>
                   var doughnutData = [
                     {
-                      value: 80,
-                      color:"#6c9bc7"
+                      value: 88,
+                      color: "#008B8B"
+
                     },
                     {
-                      value : 20,
+                      value : 12,
                       color : "white"
                     }
                   ];
-                  var myDoughnut = new Chart(document.getElementById("ror").getContext("2d")).Doughnut(doughnutData);
+                  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
                 </script>
               </div>
               <div class="col-md-4 mt">
                 <canvas id="js" height="130" width="130"></canvas>
-                <p>JavaScript/jQuery/Backbone.js</p>
+                <p>JavaScript/jQuery</p>
                 <br>
                 <script>
                   var doughnutData = [
                       {
-                        value: 70,
-                        color:"#6c9bc7"
+                        value: 77,
+                        color: "#008B8B"
                       },
                       {
-                        value : 30,
+                        value : 23,
                         color : "white"
                       }
                     ];
@@ -124,21 +127,21 @@
                 </script>
               </div>
               <div class="col-md-4 mt">
-                <canvas id="html" height="130" width="130"></canvas>
-                <p>HTML/CSS</p>
+                <canvas id="rails" height="130" width="130"></canvas>
+                <p>Ruby on Rails</p>
                 <br>
                 <script>
                   var doughnutData = [
                       {
                         value: 70,
-                        color:"#6c9bc7"
+                        color: "#008B8B"
                       },
                       {
                         value : 30,
                         color : "white"
                       }
                     ];
-                    var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                    var myDoughnut = new Chart(document.getElementById("rails").getContext("2d")).Doughnut(doughnutData);
                 </script>
               </div>
               <div class="col-md-4 mt">
@@ -149,7 +152,7 @@
                   var doughnutData = [
                       {
                         value: 60,
-                        color:"#6c9bc7"
+                        color: "#008B8B"
                       },
                       {
                         value : 40,
@@ -160,39 +163,40 @@
                 </script>
               </div>
               <div class="col-md-4 mt">
+                <canvas id="sql" height="130" width="130"></canvas>
+                <p>PostgreSQL</p>
+                <br>
+                <script>
+                  var doughnutData = [
+                      {
+                        value: 65,
+                        color: "#008B8B"
+                      },
+                      {
+                        value : 35,
+                        color : "white"
+                      }
+                    ];
+                    var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
+                </script>
+              </div>
+              <div class="col-md-4 mt">
                 <canvas id="git" height="130" width="130"></canvas>
                 <p>Git</p>
                 <br>
                 <script>
                   var doughnutData = [
                       {
-                        value: 80,
-                        color:"#6c9bc7"
-                      },
-                      {
-                        value : 20,
-                        color : "white"
-                      }
-                    ];
-                    var myDoughnut = new Chart(document.getElementById("git").getContext("2d")).Doughnut(doughnutData);
-                </script>
-              </div>
-              <div class="col-md-4 mt">
-                <canvas id="backbone" height="130" width="130"></canvas>
-                <p>PostgreSQL</p>
-                <br>
-                <script>
-                  var doughnutData = [
-                      {
                         value: 75,
-                        color:"#6c9bc7"
+                        color: "#008B8B"
+
                       },
                       {
                         value : 25,
                         color : "white"
                       }
                     ];
-                    var myDoughnut = new Chart(document.getElementById("backbone").getContext("2d")).Doughnut(doughnutData);
+                    var myDoughnut = new Chart(document.getElementById("git").getContext("2d")).Doughnut(doughnutData);
                 </script>
               </div>
             </div><!-- /row -->
@@ -204,13 +208,18 @@
       <div class="container">
         <div class="row centered">
           <div class="col-md-8 col-md-offset-2">
-            <h1>About</h1>
+            <h1 style="color: black">About</h1>
+              <div class"col-md-4">
               <h3 class="mb">Full stack web developer with an emphasis on the front end. I’m passionate about creating user friendly, practical, and fun web applications. 
               I enjoy keeping up to date with web trends and current technologies, and am enthusiastic about continuously refining my skill set. Daily occurrences: Obsessively cleaning my bookmark folders, Game of Thrones soundtrack on loop, maintaining impeccable posture.</h3>
+              <div class="col-md-4">
+                <img src="assets/img/headshot.jpg" style="height: 200px">
+              </div>
           </div>
         </div><!--/row-->
       </div><!--/container-->
     </div><!--/.sep-->
+  </div>
 
     <div id="f">
       <div class="container">
