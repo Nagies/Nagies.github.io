@@ -48,6 +48,8 @@ p {
 html,
 body {
 	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .alignleft { float: left; }
@@ -205,7 +207,7 @@ input {
 	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 783px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -332,7 +334,7 @@ input {
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;
+	min-height: 470px;
 	width: 100%;
 	color: white;
 	
