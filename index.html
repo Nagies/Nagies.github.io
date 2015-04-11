@@ -45,10 +45,10 @@
         </div>
         <div id="nav-links" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#s" style="color:#2F4F4F;font-size: medium">Skills</a></li>
-            <li><a href="#g" style="color:#2F4F4F;font-size: medium">Portfolio</a></li>
-            <li><a href="#sep" style="color:#2F4F4F;font-size: medium">About</a></li>
-            <li><a href="#h" style="color:#2F4F4F;font-size: medium">Top</a></li>
+            <li><a href="#s" style="color:#FAF9F7;font-size: medium">Skills</a></li>
+            <li><a href="#g" style="color:#FAF9F7;font-size: medium">Portfolio</a></li>
+            <li><a href="#sep" style="color:#FAF9F7;font-size: medium">About</a></li>
+            <li><a href="#h" style="color:#FAF9F7;font-size: medium">Top</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -188,43 +188,54 @@
 
 <!-- Portfolio page -->    
     <div id="g">
+<!--  <div class="portfolio-centered mt" style="height: 450px">
+      <div class="recentitems portfolio"> -->
       <div class="container">
         <div class="row centered">
-          <h1>Check out some of my latest work.</h1>
-        </div><!--/row-->
-      </div><!--/.container-->
+          <h1 style="padding-bottom: 28px;">Check out some of my latest work.</h1>
 
-      <div class="portfolio-centered mt" style="height: 450px">
-        <div class="recentitems portfolio">
+          <div class="col-md-2"></div>
 
-        <div class="portfolio-item graphic-design">
-          <div class="he-wrap tpl6">
-          <img src="assets/img/nose-up.jpg" class="img-responsive" alt="" style="height: 215px">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">Catnapp</h3>
-                <a data-rel="prettyPhoto" href="assets/img/catnapp.png" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                <a href="https://catnapp.herokuapp.com/users/sign_in" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-               </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
-                            
-        <div class="portfolio-item web-design">
-          <div class="he-wrap tpl6">
-          <img src="assets/img/cookie.jpg" class="img-responsive" alt="" style="height: 215px">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">Cookie Monster</h3>
-                <a data-rel="prettyPhoto" href="assets/img/cookie-monster.png" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
-                <a href="https://infinite-retreat-7799.herokuapp.com/users/sign_in" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
-              </div><!-- he bg -->
-            </div><!-- he view -->    
-          </div><!-- he wrap -->
-        </div><!-- end col-12 -->
+            <div class="col-md-4" style="right: 10px;">
+              <div class="portfolio-item graphic-design">
+                <div class="he-wrap tpl6">
+                <img src="assets/img/nose-up.jpg" class="img-responsive" alt="" style="height: 215px;">
+                  <div class="he-view" style="width: 315px;">
+                    <div class="bg a0" data-animate="fadeIn">
+                      <h3 class="a1" data-animate="fadeInDown">Catnapp</h3>
+                      <a data-rel="prettyPhoto" href="assets/img/catnapp.png" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                      <a href="https://catnapp.herokuapp.com/users/sign_in" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
+                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>Have you ever been stuck at school, work, or jumping around from meeting to meeting and wished you had a place to just relax? Catnapp is a full stack web application that affords you the ability to do just that, relax. Catnapp takes your current location and finds nearby hosts that are willing to lend their space for a couple hours at a time. Power nap, study space, it’s up to you. So next time you’re feeling stressed and tired, find a Catnapp near you and reserve a space. <br/> Technologies used - Ruby on Rails, JavaScript/jQuery, Google Maps API/Geolocation, HTML/CSS/SASS, Materialize, and Devise</p>
+              
+            </div>
+
+            <div class="col-md-4" style="left: 10px">
+              <div class="portfolio-item web-design">
+                <div class="he-wrap tpl6">
+                <img src="assets/img/cookie.jpg" class="img-responsive" alt="" style="height: 215px; width: 315px;">
+                  <div class="he-view" style="width: 315px;">
+                    <div class="bg a0" data-animate="fadeIn">
+                      <h3 class="a1" data-animate="fadeInDown">Cookie Monster</h3>
+                      <a data-rel="prettyPhoto" href="assets/img/cookie-monster.png" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-search"></i></a>
+                      <a href="https://infinite-retreat-7799.herokuapp.com/users/sign_in" class="dmbutton a2" data-animate="fadeInUp"><i class="ion-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>Full stack web application that uses user geolocation to search for local businesses that sell cookies, and uses an integration of Google Maps and Foursquare APIs, respectively. The app was built with Ruby on Rails, JavaScript/jQuery, and Bootstrap.</p>
+
+            <div class="col-md-2"></div>
+              
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
     <div id="sep">
       <div class="container">
@@ -233,8 +244,8 @@
             <h1 style="color: black">About</h1>
               <div class="col-md-6">.col-md-6<img src="assets/img/headshot.png" class="headshot">
               </div>
-              <div class="col-md-6">.col-md-6<h3 class="mb">Web developer with an emphasis on the front end. I’m passionate about creating user friendly, practical, and fun web applications. 
-              I enjoy keeping up to date with web trends and current technologies, and am enthusiastic about continuously refining my skill set. Daily occurrences: Obsessively cleaning my bookmark folders, Game of Thrones soundtrack on loop, maintaining impeccable posture.</h3>
+              <div class="col-md-6">.col-md-6<h3 class="mb" style="text-align: justify; text-justify: inter-word;">Web developer with an emphasis on the front end. I’m passionate about creating user friendly, practical, and fun web applications. 
+              I enjoy keeping up to date with web trends and current technologies, and am enthusiastic about continuously refining my skill set. <br/> Daily occurrences: Obsessively cleaning my bookmark folders, Game of Thrones soundtrack on loop, maintaining impeccable posture.</h3>
               </div>
           </div>
         </div><!--/row-->
