@@ -452,3 +452,7 @@ min-height: 783px;
 	margin-top: 30px;
 	letter-spacing: 1px;
 }
+
+a.pp_expand {
+	visibility:hidden;
+}
