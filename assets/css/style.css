@@ -285,7 +285,7 @@ min-height: 783px;
 }
 
 #skills {
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(13, 7, 7, 0.31);
   min-height: 783px;
 }
 
@@ -316,7 +316,7 @@ min-height: 783px;
 	min-height: 783px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background: rgb(34, 167, 240);
+	background: rgba(25, 56, 110, 0.92);
 }
 
 .portfolio {
@@ -370,7 +370,7 @@ min-height: 783px;
 /* CONTACT SEPARATOR */
 #sep {
 	min-height: 685px;
-	background-color: white;
+	background-color: rgba(13, 7, 7, 0.31);
 	padding-top: 50px;
 	background-attachment: relative;
 	background-position: center center;
@@ -403,7 +403,7 @@ min-height: 783px;
 #f {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background-color: #22A7F0;
+	background-color: rgba(25, 56, 110, 0.92);
 }
 
 #f i {
