@@ -324,6 +324,14 @@ min-height: 783px;
 	background: rgba(25, 56, 110, 0.92);
 }
 
+#catnapp-mobile {
+	right: 10px;
+}
+
+#cookie-mobile {
+	left: 10px;
+}
+
 .portfolio {
 	padding:0 !important;
 	margin:0 !important;
