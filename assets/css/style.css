@@ -456,3 +456,17 @@ min-height: 783px;
 a.pp_expand {
 	visibility:hidden;
 }
+
+#hello-i-am {
+	right: 510px;
+}
+
+@media screen and (max-width:1484px) {
+	#h {
+		width: 100%;
+	}
+
+	#hello-i-am {
+		position: relative;
+	}
+}
