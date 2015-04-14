@@ -1,0 +1,31 @@
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#h {
+	min-height: 667px;
+}
+
+#hello-i-am {
+	right: 0;
+	bottom: 28px;
+}
+
+#catnapp-mobile {
+	right: 0;
+	left: 15px;
+}
+
+#cookie-mobile {
+	top: 20px;
+}
+
+#sep .headshot {
+	height: auto;
+	width: 100%;
+}
+
+#headshot-mobile {
+	right: 15px;
+}

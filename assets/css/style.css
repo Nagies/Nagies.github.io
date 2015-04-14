@@ -63,7 +63,7 @@ body {
 }
 
 .navbar-default {
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.8);
 	border-color: transparent;
 }
 
@@ -251,6 +251,11 @@ input {
     background-size: cover;
     color: white;
 }
+
+#hello-i-am {
+	right: 510px;
+}
+
 
 #h .logo {
 	margin-top: 30px;
@@ -457,16 +462,6 @@ a.pp_expand {
 	visibility:hidden;
 }
 
-#hello-i-am {
-	right: 510px;
-}
 
-@media screen and (max-width:1484px) {
-	#h {
-		width: 100%;
-	}
 
-	#hello-i-am {
-		position: relative;
-	}
-}
+
