@@ -412,6 +412,10 @@ min-height: 783px;
 	height: 416px;
 }
 
+#sep #about-text {
+	padding-top: 40px;
+}
+
 /* FOOTER */
 #f {
 	padding-top: 25px;

@@ -1,0 +1,32 @@
+#hello-i-am {
+	right: 0;
+	bottom: -6px;
+}
+
+#nav-links {
+	position: absolute;
+	top: 0;
+	right: auto;
+	left: 0;
+	bottom: auto;
+}
+
+#g #catnapp-mobile {
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 372px;
+}
+
+#g #cookie-mobile {
+	top: 15px;
+	left: -5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 372px;
+}
+
+#headshot-mobile {
+	right: 15px;
+}

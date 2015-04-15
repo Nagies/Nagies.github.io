@@ -1,0 +1,12 @@
+#hello-i-am {
+	right: 0;
+	bottom: 25px;
+}
+
+#nav-links {
+	position: absolute;
+	top: 0;
+	right: auto;
+	left: 0;
+	bottom: auto;
+}
