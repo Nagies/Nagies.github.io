@@ -14,7 +14,7 @@ html, body {
 
 #g #catnapp-mobile {
 	right: 0;
-	left: 0;
+	left: 12px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 372px;
@@ -22,7 +22,7 @@ html, body {
 
 #g #cookie-mobile {
 	top: 15px;
-	left: -5px;
+	left: 6px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 372px;
