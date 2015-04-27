@@ -17,29 +17,29 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" media="">
-    <link rel="stylesheet" href="assets/css/mobile-responsive.css" 
-    media= "only screen 
-    and (min-width: 320px) 
+    <link rel="stylesheet" href="assets/css/mobile-responsive.css"
+    media= "only screen
+    and (min-width: 320px)
     and (max-width: 767px)">
 
-    <link rel="stylesheet" href="assets/css/mobile-headshot-responsive.css" 
-    media= "only screen 
-    and (min-width: 475px) 
+    <link rel="stylesheet" href="assets/css/mobile-headshot-responsive.css"
+    media= "only screen
+    and (min-width: 475px)
     and (max-width: 767px)">
 
     <link rel="stylesheet" href="assets/css/midsize-responsive.css"
     media= "only screen
-    and (min-width: 768px) 
+    and (min-width: 768px)
     and (max-width: 991px)">
 
     <link rel="stylesheet" href="assets/css/headshot-large-responsive.css"
     media= "only screen
-    and (min-width: 992px) 
+    and (min-width: 992px)
     and (max-width: 1199px)">
-    
+
     <link rel="stylesheet" href="assets/css/large-responsive.css"
     media= "only screen
-    and (min-width: 992px) 
+    and (min-width: 992px)
     and (max-width: 1500px)">
 
     <link rel="stylesheet" href="assets/css/extra-large-responsive.css"
@@ -214,7 +214,7 @@
       </div>
     </div>
 
-    <!-- Portfolio page -->    
+    <!-- Portfolio page -->
     <div id="g">
       <div class="container">
         <div class="row centered">
@@ -236,10 +236,10 @@
                 </div>
               </div>
 
-              <p style="width:315px; text-align: left;color: #FAF9F7;">Catnapp is a full stack web application that takes your current location and finds nearby hosts that are willing to lend their space for a couple of hours at a time. Power nap, study space, it’s up to you. So next time you’re feeling stressed and tired, find a Catnapp near you and reserve a space.</p> 
+              <p style="width:315px; text-align: left;color: #FAF9F7;">Catnapp is a full stack web application that takes your current location and finds nearby hosts that are willing to lend their space for a couple of hours at a time. Power nap, study space, it’s up to you. So next time you’re feeling stressed and tired, find a Catnapp near you and reserve a space.</p>
 
               <p style="width: 315px; text-align: left; color: #FAF9F7;">Technologies used: Ruby on Rails, JavaScript/jQuery, Google Maps API/Geolocation, HTML5/CSS3, Materialize, and Devise.</p>
-              
+
             </div>
 
             <div id="cookie-mobile" class="col-md-4">
@@ -329,11 +329,11 @@
   var $container = $('.portfolio'),
     $items = $container.find('.portfolio-item'),
     portfolioLayout = 'fitRows';
-    
+
     if( $container.hasClass('portfolio-centered') ) {
       portfolioLayout = 'masonry';
     }
-        
+
     $container.isotope({
       filter: '*',
       animationEngine: 'best-available',
@@ -346,12 +346,12 @@
     masonry: {
     }
     }, refreshWaypoints());
-    
+
     function refreshWaypoints() {
       setTimeout(function() {
-      }, 1000);   
+      }, 1000);
     }
-        
+
     $('nav.portfolio-filter ul a').on('click', function() {
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector }, refreshWaypoints());
@@ -359,11 +359,11 @@
         $(this).addClass('active');
         return false;
     });
-    
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
+
+    function getColumnNumber() {
+      var winWidth = $(window).width(),
       columnNumber = 1;
-    
+
       if (winWidth > 1200) {
         columnNumber = 5;
       } else if (winWidth > 950) {
@@ -376,31 +376,31 @@
         columnNumber = 1;
       }
         return columnNumber;
-      }       
-      
+      }
+
       function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
+        var winWidth = $(window).width(),
+        columnNumber = getColumnNumber(),
         itemWidth = Math.floor(winWidth / columnNumber);
-        
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-          width : itemWidth + 'px' 
+
+        $container.find('.portfolio-item').each(function() {
+          $(this).css( {
+          width : itemWidth + 'px'
         });
       });
     }
-    
-    function setPortfolio() { 
+
+    function setPortfolio() {
       setColumns();
       $container.isotope('reLayout');
     }
-      
-    $container.imagesLoaded(function () { 
+
+    $container.imagesLoaded(function () {
       setPortfolio();
     });
-    
-    $(window).on('resize', function () { 
-    setPortfolio();          
+
+    $(window).on('resize', function () {
+    setPortfolio();
   });
 })(jQuery);
 </script>
