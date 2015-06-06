@@ -13,7 +13,6 @@
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
 
@@ -22,6 +21,7 @@
 	padding: 0px;
     font-family: 'Lato', sans-serif;
 } 
+
 body { 
 	background: #fff; 
 	margin: 0; 
@@ -124,6 +124,7 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 a { 
 	padding: 0;
 	margin: 0;
@@ -237,8 +238,8 @@ input {
 	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 783px;
-	width: 100%;
+	height: 806px;
+	max-width: 100%;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -285,13 +286,14 @@ input {
 
 #s {
 
-min-height: 783px;
+min-height: 806px;
+
 
 }
 
 #skills {
   background-color: rgba(13, 7, 7, 0.31);
-  min-height: 783px;
+  min-height: 806px;
 }
 
 #skills h3 {
@@ -318,7 +320,7 @@ min-height: 783px;
 
 /* GREY SECTION */
 #g {
-	min-height: 783px;
+	min-height: 806px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: rgba(25, 56, 110, 0.92);
@@ -382,7 +384,7 @@ min-height: 783px;
 
 /* CONTACT SEPARATOR */
 #sep {
-	min-height: 685px;
+	min-height: 706px;
 	background-color: rgba(13, 7, 7, 0.31);
 	padding-top: 50px;
 	background-attachment: relative;
