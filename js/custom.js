@@ -446,14 +446,14 @@
 
 
 		 // Quotes
-		 jQuery(document).ready(function($) {
-		 	"use strict";
+		//  jQuery(document).ready(function($) {
+		//  	"use strict";
 
-		    $('#quote-slideshow').bjqs({
-				showcontrols : false,
-				centercontrols : false
-		    });
-		});
+		//     $('#quote-slideshow').bjqs({
+		// 		showcontrols : false,
+		// 		centercontrols : false
+		//     });
+		// });
 
 
 
