@@ -1308,6 +1308,14 @@ li#contact-link a.nav-current h3, #contact-link a.nav-current i {
   transform: scale(1,1);
 }
 
+.portfolio-link-project {
+  color: black;
+}
+
+.portfolio-link-project:hover {
+  color: #3498db;
+}
+
 .quotes {
   display: block;
   position: relative;
