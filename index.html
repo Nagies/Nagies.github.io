@@ -784,12 +784,19 @@
 
 
 						<div class="col-lg-7 col-md-12 col-sm-7 col-xs-12 contact-form">
-							<form method="post" id="contactform" name="contactform">
+							<!-- <form action="http://formspree.io/jnagelberg@gmail.com" method="post" id="contactform" name="contactform">
 								<input type="text" name="name" id="name" placeholder="name">
-								<input type="email" name="email" id="email" placeholder="email">
+								<input type="email" name="_replyto" id="email" placeholder="email">
 								<input type="text" name="subject" id="subject" placeholder="subject">
 								<textarea name="message" id="message" placeholder="message"></textarea>
-								<input type="submit" name="submit" id="submit" value="submit" style="margin-bottom: 1em;">
+								<input type="submit" name="submit" id="submit" value="Send" style="margin-bottom: 1em;">
+							</form> -->
+							<form action="//formspree.io/jnagelberg@gmail.com" method="POST">
+							    <input type="text" name="name" placeholder="name">
+							    <input type="email" name="_replyto" placeholder="email">
+							    <input type="text" name="subject" placeholder="subject">
+							    <textarea name="message" placeholder="message"></textarea>
+							    <input type="submit" value="Send" style="margin-bottom: 1em;">
 							</form>
 
 							<h4 id="cf-success">
