@@ -434,6 +434,29 @@ h1, h3, h5, ul {
     /* Style adjustments for high resolution devices */
 }
 
+@media all and (max-width: 50rem) {
+    .main-header {
+        padding: 0 20px !important;
+    }
+
+    .hero-main {
+        padding: 0 20px !important;
+    }
+
+    #about-container {
+        padding: 100px 20px !important;
+    }
+
+    .box {
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #work {
+        padding-bottom: 0 !important;
+    }
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
