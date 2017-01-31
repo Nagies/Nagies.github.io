@@ -103,6 +103,7 @@ textarea {
 a {
     color: inherit;
     text-decoration: none;
+    display: inline-block;
 }
 
 h1, h3, h5, ul {
@@ -116,7 +117,6 @@ h1, h3, h5, ul {
 .main-header {
     width: 100%;
     height: 80px;
-    background: #ccc;
     position: absolute;
     top: 0;
     left: 0;
@@ -130,6 +130,7 @@ h1, h3, h5, ul {
     float: left;
     height: 100%;
     display: table;
+    color: white;
 }
 
 .main-logo h1 {
@@ -148,6 +149,7 @@ h1, h3, h5, ul {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
+    color: white;
 }
 
 .main-nav-li {
@@ -155,23 +157,92 @@ h1, h3, h5, ul {
     padding: 0 15px;
 }
 
+
 /*Hero*/
 
 .hero {
-    width: 100%;
-    background: #eee;
-    height: 700px;
-    position: relative;
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
 .hero-main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
+    width: 600px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    z-index: 50;
 }
 
+.hero-icon-container {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 120px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/*Work*/
+
+#about {
+    height: 600px;
+    width: 100%;
+}
+
+
+/*Video*/
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
 
 
 
