@@ -80,3 +80,20 @@ $(function() {
     }
   });
 });
+
+
+$(".box").mouseover(".box-container .box", function(){
+    $(this).find(".box-overlay").show();
+})
+
+$(".box").mouseout(".box-container .box", function(){
+    $(this).find(".box-overlay").hide();
+})
+
+
+
+
+
+
+
+

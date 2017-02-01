@@ -129,7 +129,7 @@ h1, h3, h5, ul {
     right: 0;
     overflow: hidden;
     z-index: 500;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .main-logo {
@@ -139,10 +139,14 @@ h1, h3, h5, ul {
     color: white;
 }
 
-.main-logo h1 {
-    font-size: 24px;
+.main-logo a {
     display: table-cell;
     vertical-align: middle;
+}
+
+.main-logo h1 {
+    font-size: 20px;
+    
 }
 
 .main-nav {
@@ -205,6 +209,9 @@ h1, h3, h5, ul {
 
 #about {
     width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #ff6666;
 }
 
 #about-container {
@@ -212,7 +219,22 @@ h1, h3, h5, ul {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: 100px 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+#about-container h1 {
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#about-container p {
+    line-height: 23px;
 }
 
 .about-ul {
@@ -233,15 +255,21 @@ h1, h3, h5, ul {
 
 #work {
     width: 100%;
-    padding: 0 0 150px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .box-container {
     width: 100%;
-    height: 100%;
     overflow: hidden;
     margin: 0 auto;
     max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
 }
 
 .box-container a {
@@ -255,9 +283,9 @@ h1, h3, h5, ul {
 
 .box {
     float: left;
-    height: 250px;
+    height: 200px;
     width: 33.333333%;
-    padding: 2px;
+    position: relative;
 }
 
 .box img {
@@ -265,8 +293,27 @@ h1, h3, h5, ul {
     height: 100%;
 }
 
-.box:hover {
-    opacity: 0.8;
+.box-overlay {
+    display: none;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 102, 255, 0.45);
+}
+
+.box-overlay-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
 }
 
 /*footer*/
@@ -434,17 +481,28 @@ h1, h3, h5, ul {
     /* Style adjustments for high resolution devices */
 }
 
-@media all and (max-width: 50rem) {
+@media all and (max-width: 600px) {
     .main-header {
         padding: 0 20px !important;
+    }
+
+    .main-logo h1 {
+        font-size: 16px !important;
     }
 
     .hero-main {
         padding: 0 20px !important;
     }
 
+    #about {
+        height: auto !important;
+    }
+
     #about-container {
         padding: 100px 20px !important;
+        position: static !important;
+        top: 0 !important;
+        transform: none !important;
     }
 
     .box {
@@ -454,6 +512,13 @@ h1, h3, h5, ul {
 
     #work {
         padding-bottom: 0 !important;
+        height: auto !important;
+    }
+
+    .box-container {
+        position: static !important;
+        top: 0 !important;
+        transform: none !important;
     }
 }
 
