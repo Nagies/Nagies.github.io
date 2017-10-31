@@ -1,99 +1,43 @@
-
-//jQuery is required to run this code
-$( document ).ready(function() {
-
-    scaleVideoContainer();
-
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
-
-    $(window).on('resize', function() {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
+$(window).load(function() {
+/*-----------------------------------------------------------------------------------*/
+/*   INIT SKROLLR
+/*-----------------------------------------------------------------------------------*/
+    var s = skrollr.init({
+        forceHeight: false
     });
-
-});
-
-function scaleVideoContainer() {
-
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
-
-}
-
-function initBannerVideoSize(element){
-
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-
-    scaleBannerVideoSize(element);
-
-}
-
-function scaleBannerVideoSize(element){
-
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
-
-    console.log(windowHeight);
-
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-        $(this).width(windowWidth);
-
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-            $(this).width(videoWidth).height(videoHeight);
-        }
-
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-    });
-}
-
-
-// Smooth Scroll
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        skrollr.init().destroy();
     }
-  });
 });
 
-
-$(".box").mouseover(".box-container .box", function(){
-    $(this).find(".box-overlay").show();
-})
-
-$(".box").mouseout(".box-container .box", function(){
-    $(this).find(".box-overlay").hide();
-})
-
-
-
-
-
-
-
-
+(function($) {
+/*-----------------------------------------------------------------------------------*/
+/*   SMOOTH SCROLLING
+/*-----------------------------------------------------------------------------------*/
+    $.scrollTo = $.fn.scrollTo = function(o, t, n) {
+        return this instanceof $ ? (n = $.extend({}, {
+            gap: {
+                x: 0,
+                y: 0
+            },
+            animation: {
+                easing: "swing",
+                duration: 800,
+                complete: $.noop,
+                step: $.noop
+            }
+        }, n), this.each(function() {
+            var a = $(this);
+            a.stop().animate({
+                scrollLeft: isNaN(Number(o)) ? $(t).offset().left + n.gap.x : o,
+                scrollTop: isNaN(Number(t)) ? $(t).offset().top + n.gap.y : t
+            }, n.animation)
+        })) : $.fn.scrollTo.apply($("html, body"), arguments)
+    };
+    $('.smoothscroll a').on('click',function(e) {
+        $('html,body').scrollTo(this.hash, this.hash, {
+            'axis': 'y'
+        });
+        e.preventDefault();
+    });
+})(jQuery);

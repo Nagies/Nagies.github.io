@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Documentation</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' type='text/css'>
+    <link rel='stylesheet' href='css/grid.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    
+  </head>
+  <body>
+    <div class="content-root">
+      <div class="menubar">
+        <nav>
+          <ul>
+            
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <!-- =========================================================== -->
+        <!-- Overview -->
+        <!-- =========================================================== -->
+        <section>
+          <h1>Overview</h1>
+          <ul class="basic-info">
+            <li><strong>Name</strong> Amari | Personal Portfolio Template</li>
+            <li><strong>Author</strong> <a href="http://omnifycreative.com" target="_blank">Omnify</a></li>
+            <li><strong>Type</strong> HTML template</li>
+            <li><strong>Features</strong> HTML5, CSS3, Behance, Portfolio Template</li>
+            <li><strong>Created</strong> April 2016</li>
+            <li><strong>Version</strong> 1.0.0</li>
+            <li><strong>Email</strong> <a href="mailto:gfxbucket@gmail.com">arielbeninca@yahoo.com</a></li>
+          </ul>
+          <p>First of all I would like to thank you for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email me </a>. Thank you so much!</p>
+        </section>
+        <!-- =========================================================== -->
+        <!-- Setup -->
+        <!-- =========================================================== -->
+        <section>
+          <h1>Setup</h1>
+          <article >
+            <p>To begin, drag the index.html file into a browser such as chrome, the website should appear. Then drag the project files into a text editor such as <a href="https://www.sublimetext.com/" target="_blank"> Sublime text</a>. You will see all your files in the side bar.</p>
+            <br>
+          </article>
+          <article class="element">
+            <h2>Step 1 - Adding your Behance Feed</h2>
+            <p>Go into the <strong>index.html</strong> file in the Amari folder and locate this line of code in portfolio section within the script tag (you can also press command + f to search) </p>
+          <pre class="language-markup"><code class="language-markup">window.behance = {clientId: 'dylvP53sMdPu1Nam5qvGKgvyWhfetwuS', username: 'chrisvenning'}</code></pre>
+          <p>Then replace the behance username with your own like below</p>
+        <pre class="language-markup"><code class="language-markup">window.behance = {clientId: 'dylvP53sMdPu1Nam5qvGKgvyWhfetwuS', username: 'arielbeninca'}  </code></pre>
+        <p>Your own behance feed will now show up.
+        <br>
+        <br>
+        Optional: If you would like to you can generate your own Client ID/ API through this link <a href="https://www.behance.net/dev/register"> https://www.behance.net/dev/register </a></p>
+      </article>
+      <article class="element">
+        <h2>Step 2 - Changeing Text</h2>
+        <p>To customise the site you must change the following...
+          
+        </p>
+        <br>
+        <ol>
+          <li>Change your name in the header or replace the text with your logo in an img tag <br>
+            <pre class="language-markup"> <code class="language-markup"><div class="logo">Amari</div> </code></pre>
+          </li>
+          <li>Change the h1 Intro text in the header tag
+          </li>
+          <li>Change the about text located in the footer under p#about
+            
+          </li>
+          <li>Change Contact details under <br>
+<pre class="language-markup"> <code class="language-markup"><div class="col span_3_of_12">
+<h3>Contact</h3> 
+<p><a href="mailto:arielbeninca@yahoo.com" >hello@amariwest.com</a></p>
+<p>0474847463</p>
+</div></code></pre>
+          </li>
+        </ol>
+      </article>
+      <article class="element">
+        <h2>Step 3 - Add your Resume</h2>
+        <p>
+Name your resume file ‘resume.pdf' then drop it into the files to replace the existing and override it
+
+</p>
+      </article>
+      <article class="element">
+        <h2>Step 4 - Social links</h2>
+        <p>Choose what social links you would like on your website, you can find more social icons on the <a href="http://fontawesome.io/icons/" target="_blank"> fontewesome website </a>. Then make sure they link to your corresponding social media. </p>
+<pre class="language-markup"> <code class="language-markup"> <ul id="social-links">
+<li><a href="https://twitter.com/ArielBeninca" target="_blank" title="Ariel Beninca Twitter" ><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.facebook.com/arielbeninca"target="_blank" title="Ariel Beninca Facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="http://iconosquare.com/arielbeninca"target="_blank" title="Ariel Beninca Instagram" ><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://www.behance.net/arielbeninca" target="_blank" title="Ariel Beninca Behance"><i class="fa fa-behance"></i></a></li>
+<li><a href="https://www.linkedin.com/in/arielbeninca" target="_blank" title="Ariel Beninca Linkedin"><i class="fa fa-linkedin" ></i></a></li>
+<li><a href="http://codepen.io/ArielBeninca/" target="_blank" title="Ariel Beninca Codepen"><i class="fa fa-codepen"></i></a></li>
+</ul> </code></pre>
+      </article>
+      <article class="element">
+        <h2>Step 5 - Launching your website</h2>
+        <p>Once you have completed your website it's time to launch it live. The first thing you will need is hosting, like <a href="https://au.godaddy.com/offers/default.aspx?isc=cjcdef1ha&tmskey=1domwebhost_3&afsrc=1&cvosrc=affiliate.cj.7696969" target="_blank">Go Daddy</a>. When buying 12 months hosting from go daddy it comes with a free domain name. If you already have a domain name you will have to connect it to the hosting.</p>
+        <p>  Now that your hosting and domain is all setup, download a ftp program like <a href="https://filezilla-project.org/" target="_blank"> Filezilla</a> and connect it to your hosting. For more details on how to do that please <a href="https://au.godaddy.com/help/filezilla-ftp-settings-to-upload-your-website-104" target="_blank">Click Here</a>. Once connected to your hosting through ftp, drag and drop your website files into the correct folder on Filezilla and it will upload them to your domain.</p>
+        <p>You have now completed basic customisation of the website, but remeber there are no limitations with what you can do</p>
+      </article>
+      
+    </section>
+    
+    <!-- =========================================================== -->
+    <!-- CSS Structure -->
+    <!-- =========================================================== -->
+    
+    <section>
+      <h1>CSS Structure</h1>
+      <ul class="structure">
+        <li><strong>normalize.css</strong> - A small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It's a modern, HTML5-ready, alternative to the traditional CSS reset. Think of it as resetting all defult browser styles.</li>
+        <li><strong>font-awesome.min.css</strong> - File containing the icon font css. Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</li>
+            <li><strong>animate.css</strong> - a bunch of cool, fun, and cross-browser animations. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</li>
+        <li><strong>main.css</strong> - This file contains all the styles and have been commented out by section. </li>
+      </ul>
+    </section>
+    <!-- =========================================================== -->
+    <!-- Sass -->
+    <!-- =========================================================== -->
+    <section>
+      <h1>Sass</h1>
+      <p>Our theme has been built using <a href="http://sass-lang.com/" target="_blank">Sass</a>. This means you can quite easily add your own markup and change the theme to fit your project. We recommend that you use Sass files instead of pure CSS files if you intend to apply style changes. Using sass to output a compressed CSS file will also optimise site load time. </p>
+      To learn more about sass, what it is, why it's awesome, and how to use it please <a href="https://www.youtube.com/watch?v=_5kdzKJsLSk&list=PLZw64AsqBFhn8-HWOtC2PbCuktr5uuAt7" target="_blank"> click here watch this video </a>
+      <p>All the Sass files can be found in the <strong>scss</strong> folder.</p>
+    </section>
+    <!-- =========================================================== -->
+    <!-- Grid Layout -->
+    <!-- =========================================================== -->
+    <section>
+      <h1>Grid Layout</h1>
+      
+      <p> the theme uses a gird of 12</p>
+      
+      <div class="section group">
+        <div class="col span_6_of_12">
+          2 column
+        </div>
+        <div class="col span_6_of_12">
+          2 column
+        </div>
+      </div>
+        <pre class="language-markup"> <code class="language-markup"> <div class="section group">
+                  <div class="col span_6_of_12">
+                      2 column
+                  </div>
+                  <div class="col span_6_of_12">
+                      2 column
+                  </div>
+              </div></code> </pre>
+
+      <div class="section group">
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+      </div>
+
+
+
+         <pre class="language-markup"> <code class="language-markup"><div class="section group">
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+        <div class="col span_4_of_12">
+          3 column
+        </div>
+      </div></code></pre>
+
+
+
+      <div class="section group">
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+      </div>
+
+          <pre class="language-markup"> <code class="language-markup"><div class="section group">
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+        <div class="col span_3_of_12">
+          4 column
+        </div>
+      </div></code></pre>
+
+
+      <div class="section group">
+        <div class="col span_8_of_12">
+          12 column
+        </div>
+        <div class="col span_4_of_12">
+          4 column
+        </div>
+      </div>
+
+             <pre class="language-markup"> <code class="language-markup"> <div class="section group">
+        <div class="col span_8_of_12">
+          12 column
+        </div>
+        <div class="col span_4_of_12">
+          4 column
+        </div>
+      </div></code></pre>
+
+
+    </section>
+    
+    <!-- =========================================================== -->
+    <!-- SVG images -->
+    <!-- =========================================================== -->
+    <section>
+      <h1>SVG images</h1>
+      <article class="element">
+        
+        <h3>How to add an "Inline SVG" image</h3>
+        <p>If you check the body of every HTML document, you will see that at the top of it we added the SVG code. It may look a bit of a mess at first, but the code is just compressed to save bandwidth.</p>
+        <p>All you will need to do is include your new SVG inside the <strong>svg</strong> element. We suggest that you add it via the <strong>symbol</strong> element, so you will also be able to add a title to it, which will make it more SEO friendly.</p>
+        <p>Don't forget to add an ID to your new SVG image, which you will use to add the SVG image on your page. We prefixed all the IDs of our SVG images with <strong>shape-</strong>.</p>
+        <h4>Example:</h4>
+        <pre class="language-markup"><code class="language-markup"><svg><use xlink:href="#shape-laptop"></use></svg></code></pre>
+      </article>
+    </section>
+    <!-- =========================================================== -->
+    <!-- Sources and Credits -->
+    <!-- =========================================================== -->
+    <section>
+      <h1>Sources and Credits</h1>
+      <ul class="sources">
+         <li><strong>Icons</strong>
+          <ul>
+            <li><a href=http://fontawesome.io/icons/ target="_blank">Font Awesome</a></li>
+          </ul>
+        </li>
+
+
+        <li><strong>Fonts</strong>
+          <ul>
+            <li><a href="https://fonts.google.com/specimen/Work+Sans target="_blank">Work Sans</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Scripts</strong>
+          <ul>
+            <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+            <li><a href="https://github.com/Prinzhorn/skrollr" target="_blank">skrollr.js</a></li>
+            
+          </ul>
+        </li>
+        <li>
+          <strong>Other</strong>
+          <ul>
+            <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+</body>
+</html>
